@@ -6,16 +6,16 @@ const Menu = ({ items }) => {
       {items.map((menuItem) => {
         const { id, title, img, desc, price } = menuItem;
         return (
-          <div className="menu-item" key={id}>
-            <img scr={img} alt={title} className="photo" />
+          <article key={id} className="menu-item">
+            <img src={img} alt={title} className="photo" />
             <div className="item-info">
               <header>
                 <h4>{title}</h4>
-                <h4>{price}</h4>
+                <h4 className="price">${price}</h4>
               </header>
-              <p>{desc}</p>
+              <p className="item-text">{desc}</p>
             </div>
-          </div>
+          </article>
         );
       })}
     </div>
