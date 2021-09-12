@@ -60,7 +60,7 @@ const SingleMovie = () => {
       />
       <h1>Title: {title}</h1>
       <p>Released: {released}</p>
-      <h3>Rating: {rating}</h3>
+      <h3>Rating: {rating}⭐</h3>
       <p>{plot}</p>
       <Link to="/" className="btn">
         Back to Movies
