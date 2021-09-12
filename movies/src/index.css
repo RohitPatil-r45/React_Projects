@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@media screen and (min-width: 480px) {
+  section {
+    margin: 2rem 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 400px);
+    gap: 3rem 2rem;
+  }
+  .movie {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+  img {
+    width: 400px;
+    height: 400px;
+    display: block;
+    /* object-fit: cover; */
+  }
+
+  .info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* background: gray;
+    /* filter: opacity(0.8); */
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    transition: all 0.3s linear;
+    transform: translateY(100%);
+  }
+
+  .movie:hover .info {
+    transform: translateY(0);
+  }
+
+  .error {
+    color: red;
+  }
+
+  .single-movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 15rem;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 5px;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: x-large;
+    color: white;
+    background-color: aqua;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
