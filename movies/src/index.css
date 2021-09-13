@@ -86,7 +86,6 @@ code {
     font-weight: bold;
     text-decoration: none;
   }
-
   .loading {
     margin: 5rem;
     font-size: xx-large;
@@ -170,7 +169,7 @@ code {
   }
 
   .loading {
-    margin: 5rem;
+    margin: 2rem;
     font-size: xx-large;
     font-weight: bold;
   }
