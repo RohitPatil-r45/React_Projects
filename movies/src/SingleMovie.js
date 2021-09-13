@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { API_ENDPOINT } from "./context";
-
-const url =
-  "https://www.google.com/search?q=no+image+found&sxsrf=AOaemvK1E8TrMiLPN01N4VQMud5WNQG3ow:1631453948093&tbm=isch&source=iu&ictx=1&fir=DlSEFt0yTc4bvM%252Cldp7V-Ybx0nO3M%252C_&vet=1&usg=AI4_-kTnXx9gWwrz6_2AToZy5bm0BRYubw&sa=X&ved=2ahUKEwiN9avIx_nyAhV0ILcAHT5bD6IQ9QF6BAgLEAE#imgrc=DlSEFt0yTc4bvM";
+import image from "./no_image.jpg";
+const url = "./no_image.jpg";
 
 const SingleMovie = () => {
   const { id } = useParams();
@@ -45,19 +44,20 @@ const SingleMovie = () => {
 
   const {
     Title: title,
-    Poster: poster,
     Released: released,
     imdbRating: rating,
+    Poster: poster,
     Plot: plot,
   } = movie;
 
   return (
     <div className="single-movie">
       <img
-        scr={poster === "N/A" ? url : poster}
+        scr={poster === "N/A" ? image : poster}
         alt={title}
         style={{ width: "200px", height: "300px" }}
       />
+
       <h1>Title: {title}</h1>
       <p>Released: {released}</p>
       <h3>Rating: {rating}⭐</h3>

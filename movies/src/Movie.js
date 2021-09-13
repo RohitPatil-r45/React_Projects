@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "./context";
+import image from "./no_image.jpg";
 
-const url =
-  "https://www.google.com/imgres?imgurl=https%3A%2F%2Fst4.depositphotos.com%2F14953852%2F24787%2Fv%2F600%2Fdepositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg&imgrefurl=https%3A%2F%2Fdepositphotos.com%2Fvector-images%2Fno-image-available.html&tbnid=sXGK1AzI0U7nIM&vet=12ahUKEwiiyKbkr_nyAhVyFLcAHf80CQkQMygIegUIARDKAQ..i&docid=LDnLiJ-oRy4-NM&w=600&h=600&q=no%20image%20found&ved=2ahUKEwiiyKbkr_nyAhVyFLcAHf80CQkQMygIegUIARDKAQ";
 const Movie = () => {
   const { loading, movies } = useGlobalContext();
 
@@ -18,7 +17,7 @@ const Movie = () => {
           <Link to={`/movies/${id}`} key={id} className="movie">
             <article>
               <img
-                src={poster === "N/A" ? url : poster}
+                src={poster === "N/A" ? image : poster}
                 alt={title}
                 className="img"
               />
