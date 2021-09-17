@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "./context";
 import image from "./no_image.jpg";
+import Image from "./Image";
 
 const Movie = () => {
   const { loading, movies } = useGlobalContext();
@@ -16,11 +17,12 @@ const Movie = () => {
         return (
           <Link to={`/movies/${id}`} key={id} className="movie">
             <article>
-              <img
+              <Image poster={poster} title={title} />
+              {/* <img
                 src={poster === "N/A" ? image : poster}
                 alt={title}
                 className="img"
-              />
+              /> */}
               <div className="info">
                 <h2>{title}</h2>
                 <p>{year}</p>

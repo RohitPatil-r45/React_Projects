@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
+import Image from "./Image";
 import { useParams, Link } from "react-router-dom";
 import { API_ENDPOINT } from "./context";
-import image from "./no_image.jpg";
-const url = "./no_image.jpg";
 
 const SingleMovie = () => {
   const { id } = useParams();
@@ -52,11 +51,12 @@ const SingleMovie = () => {
 
   return (
     <div className="single-movie">
-      <img
+      <Image poster={poster} title={title} />
+      {/* <img
         scr={poster === "N/A" ? image : poster}
         alt={title}
         style={{ width: "200px", height: "300px" }}
-      />
+      /> */}
 
       <h1>Title: {title}</h1>
       <p>Released: {released}</p>
