@@ -1,0 +1,347 @@
+body {
+  margin: 0;
+  font-family: dafont,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "dafont";
+}
+
+@media screen and (min-width:480px){
+
+  
+  .btn{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    border-style: none;
+    font-size: 20px;
+  }
+  
+  /* Header CSS  */
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  
+  
+  
+  /* Shop List */
+  
+  .shop-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 10rem;
+  }
+  
+  .shop-container{
+    
+    width: 100%;
+  }
+  
+  .shop-open{
+    margin: 1rem 0;
+    padding:0 1rem;
+    height:80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(0, 255, 128);
+    
+  }
+  
+  .shop-close{
+    margin: 1rem 0;
+    padding:0 1rem;
+    height:80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(235, 95, 95);
+    
+  }
+  
+  .remove{
+    color:red;
+    border-style: none;
+    background-color: transparent;
+    font-size:large;
+    text-transform: uppercase;
+  }
+  
+  
+  /* Add Container */
+  
+  .form{
+    width:700px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid;
+    border-radius:2px;
+  }
+  
+  .date-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+  }
+  .date{
+    margin:0 1rem;
+  }
+  
+  .input-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* span{
+    width:100px;
+  } */
+  
+  label{
+    width: 10%;
+    font-size: 18px;
+  }
+  
+  .date-container label{
+    width: 25%;
+  }
+  
+  .input{
+    width: 250px;
+    height: 30px;
+}
+
+.date-input{
+  width: 150px;
+  height: 30px;
+}
+
+.blank{
+  text-align: center;
+  margin-top:2rem;
+}
+
+
+/* Filter */
+
+.filter-container{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.filter-input-container{
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top:1rem;
+}
+
+.filter-input{
+  width: 250px;
+  height: 30px;
+}
+.filter-container label{
+  width:26%;
+}
+
+.remove-filter{
+  color:red;
+  border-style: none;
+  
+  font-size:larger;
+}
+}
+
+
+@media screen and (max-width:480px){
+
+  
+  .btn{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    border-style: none;
+    font-size: 20px;
+  }
+  
+  /* Header CSS  */
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  
+  
+  
+  /* Shop List */
+  
+  .shop-list-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0.5rem;
+  }
+  
+  .shop-container{
+    
+    width: 100%;
+  }
+  
+  .shop-open{
+    margin: 1rem 1rem;
+height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+background-color: rgb(0, 255, 128);
+width: 90%;
+font-size: 16px;
+    
+  }
+  
+  .shop-close{
+    margin: 1rem 0;
+    padding:0 1rem;
+    height:80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(235, 95, 95);
+    
+  }
+  
+  .remove{
+    color:red;
+    border-style: none;
+    background-color: transparent;
+    font-size:25px;
+    text-transform: uppercase;
+  }
+  
+  
+  /* Add Container */
+  
+  .form{
+    width:400px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid;
+    border-radius:2px;
+  }
+  
+  .date-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+  }
+  .date{
+    margin:1rem 0;
+  }
+  
+  .input-container{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  /* span{
+    width:100px;
+  } */
+  
+  label{
+    width: 10%;
+    font-size: 18px;
+  }
+  
+  .date-container label{
+    width: 25%;
+  }
+  
+  .input{
+    width: 250px;
+    height: 30px;
+}
+
+.date-input{
+  width: 150px;
+  height: 30px;
+  margin: 3px 0;
+}
+
+.blank{
+  text-align: center;
+  margin-top:2rem;
+}
+
+
+/* Filter */
+
+.filter-container{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.filter-container label{
+  width:36%;
+}
+
+.filter-input-container{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:1rem;
+}
+.filter-input{
+  width: 200px;
+  height: 30px;
+}
+.remove-filter{
+  color:red;
+  border-style: none;
+  font-size:larger;
+  background-color:transparent;
+}
+}

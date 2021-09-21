@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 900px;
+  height: 400px;
+}
+
+.api {
+  font-size: 50px;
+  font-family: "dafont";
+  text-align: center;
+}
+
+.ceo {
+  font-size: 30px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.search-container label {
+  margin: 4px;
+  font-size: xx-large;
+}
+.search-field {
+  width: 170px;
+  height: 30px;
+  font-size: x-large;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+.capsule-container {
+  display: grid;
+  grid-template-columns: repeat(3, 450px);
+  grid-gap: 0rem;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.capsule {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 2px 5px 10px 0px #f00887;
+  height: 250px;
+  padding: 1rem;
+  background: aqua;
+}
+
+.loading {
+  text-align: center;
+}
+
+.img {
+  width: 200px;
+  height: 250px;
+}
+.img2 {
+  width: 380px;
+  height: 420px;
+}
+
+.crew-container {
+  display: grid;
+  grid-template-columns: repeat(3, 450px);
+  grid-gap: 0rem;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.crew {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 2px 5px 10px 0px #f00887;
+  height: 400px;
+  padding: 1rem;
+  background: aqua;
+}
+
+.history-container {
+  display: grid;
+  grid-template-columns: repeat(3, 450px);
+  grid-gap: 0rem;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1rem;
+  min-height: 300px;
+  box-shadow: 2px 5px 10px 0px #f00887;
+
+  padding: 1rem;
+  background: aqua;
+}
+
+.landpads-container {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  grid-gap: 0rem;
+  gap: 2rem;
+  margin: 2rem;
+  justify-content: center;
+}
+
+.landpad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 2px 5px 10px 0px #f00887;
+  /* height: 300px; */
+  padding: 1rem;
+  background: aqua;
+}
+
+.launches-container {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  grid-gap: 0rem;
+  gap: 2rem;
+  margin: 2rem;
+  justify-content: center;
+}
+
+.launch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 2px 5px 10px 0px #f00887;
+  /* height: 300px; */
+  padding: 1rem;
+  background: aqua;
+}
+
+.rockets-container {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  grid-gap: 0rem;
+  gap: 2rem;
+  margin: 2rem;
+  justify-content: center;
+}
+
+.rocket {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 2px 5px 10px 0px #f00887;
+  /* height: 300px; */
+  padding: 1rem;
+  background: aqua;
+  line-height:2;
+}
+
+.rocket ul{
+  margin-left: 3rem;
+}
+
+.rockets-container p h1{
+  text-decoration: capitalize;
+}
+
+
+.ships-container {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  grid-gap: 0rem;
+  gap: 2rem;
+  margin: 2rem;
+  justify-content: center;
+}
+
+.ships {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 2px 5px 10px 0px #f00887;
+  /* height: 300px; */
+  padding: 1rem;
+  background: aqua;
+}
