@@ -3,7 +3,7 @@ import { useGlobalContext } from "./context";
 import Image2 from "./Image2";
 import no_image from "./no_image.jpg";
 const Rockets = () => {
-  const { data, loading } = useGlobalContext();
+  const { rockets, loading } = useGlobalContext();
   if (loading) {
     return (
       <>
@@ -16,8 +16,8 @@ const Rockets = () => {
     <div>
       <h1 style={{ textAlign: "center", marginTop: "1rem" }}>Rockets</h1>
       <div className="rockets-container">
-        {Array.isArray(data) &&
-          data.map((rocket) => {
+        {Array.isArray(rockets) &&
+          rockets.map((rocket) => {
             const {
               height,
               diameter,

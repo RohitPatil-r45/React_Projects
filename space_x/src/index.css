@@ -32,6 +32,11 @@ code {
   align-items: center;
   width: 900px;
   height: 400px;
+  border:1px solid;
+  border-radius:10px;
+  padding: 1rem;
+  margin:1rem;
+  box-shadow: 4px 13px 15px 3px black;
 }
 
 .api {
@@ -84,9 +89,10 @@ code {
   align-items: center;
   border-radius: 1rem;
   box-shadow: 2px 5px 10px 0px #f00887;
-  height: 250px;
+  height: 270px;
   padding: 1rem;
-  background: aqua;
+  background: aqua;font-size: 20px;
+  word-break: break-word;
 }
 
 .loading {

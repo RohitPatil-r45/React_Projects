@@ -10,6 +10,11 @@ const AppProvider = ({ children }) => {
   const [query, setQuery] = useState("company");
   const [error, setError] = useState(false);
   const [ships, setShips] = useState([]);
+  const [rockets, setRockets] = useState([]);
+  const [landpads, setLandpads] = useState([]);
+  const [launches, setLaunches] = useState([]);
+  const [launchpads, setLaunchpads] = useState([]);
+
   const fetchAPI = async (url) => {
     // console.log(url);
     setLoading(true);
@@ -20,6 +25,18 @@ const AppProvider = ({ children }) => {
       setData(data);
       if (query === "ships") {
         setShips(data);
+      }
+      if (query === "rockets") {
+        setRockets(data);
+      }
+      if (query === "landpads") {
+        setLandpads(data);
+      }
+      if (query === "launchpads") {
+        setLaunchpads(data);
+      }
+      if (query === "launches") {
+        setLaunches(data);
       }
     } catch (e) {
       setError(true);
@@ -32,7 +49,19 @@ const AppProvider = ({ children }) => {
   }, [query, error]);
 
   return (
-    <AppContext.Provider value={{ data, query, setQuery, loading, ships }}>
+    <AppContext.Provider
+      value={{
+        data,
+        query,
+        setQuery,
+        loading,
+        ships,
+        rockets,
+        launches,
+        landpads,
+        launchpads,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );
