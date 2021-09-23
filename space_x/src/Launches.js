@@ -43,7 +43,7 @@ const Launches = () => {
                     <h1>No Video Available</h1>
                   ) : (
                     <iframe
-                      width="560"
+                      width="350"
                       height="315"
                       src={url}
                       title="YouTube video player"
