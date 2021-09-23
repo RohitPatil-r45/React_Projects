@@ -17,12 +17,12 @@ const Movie = () => {
         return (
           <Link to={`/movies/${id}`} key={id} className="movie">
             <article>
-              {/* <Image poster={poster} title={title} /> */}
-              <img
+              <Image poster={poster} title={title} />
+              {/* <img
                 src={poster === "N/A" ? image : poster}
                 alt={title}
                 className="img"
-              />
+              /> */}
               <div className="info">
                 <h2>{title}</h2>
                 <p>{year}</p>
