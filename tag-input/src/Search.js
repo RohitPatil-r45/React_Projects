@@ -6,11 +6,12 @@ const Search = ({ searchData, search, addSearchTag }) => {
       {searchData
         .filter((searchTag) => {
           if (!search) {
-            return "";
+            return 0;
           }
           if (searchTag.toLowerCase().startsWith(search.toLowerCase())) {
             return searchTag;
           }
+          return 0;
         })
         .map((searchTag, index) => {
           return (

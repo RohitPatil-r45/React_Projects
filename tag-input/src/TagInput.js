@@ -39,7 +39,11 @@ const TagInput = () => {
   };
 
   useEffect(() => {
-    if (publish == true && inputTags.length === 0) {
+    checkSearch();
+  }, [search, add]);
+
+  useEffect(() => {
+    if (publish === true && inputTags.length === 0) {
       setPublish(false);
       setAlert(true);
       setTimeout(() => {
@@ -49,10 +53,6 @@ const TagInput = () => {
       setPublish(false);
     }
   }, [inputTags, publish]);
-
-  useEffect(() => {
-    checkSearch();
-  }, [search, add]);
 
   const addTag = (e) => {
     e.preventDefault();
