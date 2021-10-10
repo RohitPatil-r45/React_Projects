@@ -27,7 +27,7 @@ const TagInput = () => {
     addBtn.style.top = `${bottom}px`;
   }, [location, inputTags]);
 
-  const checkSearch = () => {
+  const checkSearch = (search) => {
     let searchList = searchData.filter((searchTag) =>
       searchTag.toLowerCase().startsWith(search.toLowerCase())
     );
@@ -39,7 +39,7 @@ const TagInput = () => {
   };
 
   useEffect(() => {
-    checkSearch();
+    checkSearch(search);
   }, [search, add]);
 
   useEffect(() => {
