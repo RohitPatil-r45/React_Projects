@@ -184,6 +184,15 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 100px;
+  }
+  .post-alert {
+    height: 40px;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
   }
 }
 

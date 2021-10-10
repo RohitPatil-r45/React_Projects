@@ -11,6 +11,7 @@ const TagInput = () => {
   const [searchData, setSearchData] = useState(SearchTags);
   const [publish, setPublish] = useState(false);
   const [alert, setAlert] = useState(false);
+  const [posted, setPosted] = useState(false);
   const Button = useRef(null);
 
   const displayAdd = (e) => {
@@ -51,6 +52,11 @@ const TagInput = () => {
       }, 3000);
     } else if (inputTags.length === 0) {
       setPublish(false);
+    } else if (publish === true && inputTags.length !== 0) {
+      setPosted(true);
+      setTimeout(() => {
+        setPosted(false);
+      }, 3000);
     }
   }, [inputTags, publish]);
 
@@ -120,6 +126,11 @@ const TagInput = () => {
         {alert && (
           <div className="error">
             <h3>Please Enter Tag!!!</h3>
+          </div>
+        )}
+        {posted && inputTags.length !== 0 && (
+          <div className="post-alert">
+            <h3>Posted!!!</h3>
           </div>
         )}
       </div>
