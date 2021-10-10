@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Search from "./Search";
 import { SearchTags } from "./data";
 import { FaTimes, FaRegPlusSquare } from "react-icons/fa";
+
 const TagInput = () => {
   const [inputTags, setInputTags] = useState([]);
   const [search, setSearch] = useState("");
@@ -40,13 +41,10 @@ const TagInput = () => {
   useEffect(() => {
     if (publish == true && inputTags.length === 0) {
       setPublish(false);
-
       setAlert(true);
       setTimeout(() => {
         setAlert(false);
       }, 3000);
-
-      // alert("Please Enter Tag!");
     } else if (inputTags.length === 0) {
       setPublish(false);
     }
