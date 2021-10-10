@@ -101,20 +101,22 @@ const TagInput = () => {
   return (
     <div className="container">
       <div className="publish-container">
-        <button
-          type="button"
-          onClick={() => setPublish(true)}
-          className="publish-btn"
-        >
-          Publish
-        </button>
-        <button
-          type="button"
-          onClick={() => setPublish(false)}
-          className="addTag-btn"
-        >
-          Add Tags
-        </button>
+        <div>
+          <button
+            type="button"
+            onClick={() => setPublish(true)}
+            className="publish-btn"
+          >
+            Publish
+          </button>
+          <button
+            type="button"
+            onClick={() => setPublish(false)}
+            className="addTag-btn"
+          >
+            Add Tags
+          </button>
+        </div>
         {alert && (
           <div className="error">
             <h3>Please Enter Tag!!!</h3>
